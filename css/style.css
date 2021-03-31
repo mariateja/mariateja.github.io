@@ -1,0 +1,298 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('../fonts/PlayfairDisplay-Bold.ttf')
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url('../fonts/Gilroy-Regular.otf') format("opentype")
+}
+
+h1{
+    color: #18353F;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+h2{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em; 
+}
+
+h3{
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+}
+
+body {
+    font-family: "Gilroy";
+    margin-left: -1px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 62px;
+    padding: 15px 0px;
+    font-size: 16px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+    z-index: 100;
+
+}
+
+#logo {
+    margin-top: 9px;
+    margin-left: 60px;
+}
+
+nav {
+    float: right;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    color: #18353F;
+}
+
+a:hover {
+    color: #99B3BB;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation-home {
+    width: 650px;
+    font-family: "Butler";
+    font-size: 40px;
+    margin-top: 0.1em;
+}
+
+#portfolio-home {
+    font-size: 24px;
+    color: #33758A;
+    margin-bottom: 0.1em;
+}
+
+
+#maria-home {
+    font-size: 20px;
+    color: #33758A;
+}
+
+#image-home {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: auto;
+
+}
+
+.scroll-button{
+    margin-top: 70px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.theme {
+    padding: 60px;
+    display: inline-block;
+    line-height: 80px;
+    color: #33758A;
+}
+
+
+.projects-home {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 55vw;
+}
+
+.projects-home > div {
+    flex: 50%;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: center;
+    background-color: #33758A;
+    align-items: center;
+}
+
+#social-network {
+    display: flex;
+    float: right;
+    align-items: flex-end;
+}
+
+#social-network div{
+    width: 55px;
+    height: 55px;
+}
+
+.discipline {
+    font-size: 16px;
+    color: #33758A;
+    position: relative;
+    margin-top: 0.1em;
+    margin-bottom: 3em;
+}
+
+.project-presentation {
+    display: flex;
+    justify-content: center;
+}
+
+
+.self-align-center {
+    max-width: 25vw;
+}
+
+.project-image {
+    width: 25vw;
+    height: auto;
+    margin-bottom: 0.1em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.project-title{
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+
+.social-media{
+    width: 40px;
+    height: auto;
+    margin: 0.5em;    
+}
+
+.filter li a{
+    text-decoration: none;
+    color: #18353F;
+}
+
+.filter a:hover{
+    color: #99B3BB;
+}
+
+#motivational{
+    color: #ffffff;
+    width: 650px;
+    font-size: 60px;
+    font-family: "Butler";
+}
+
+#description{
+    color: #ffffff;
+}
+
+#image-about{
+        position: relative;
+        width: 100%;
+        height: auto;
+}
+
+.mobile-content{
+    display: none;
+}
+
+@media only screen and (max-width: 414px){
+
+.mobile-content{
+    display: block;
+}   
+
+.desktop-content{
+    display: none;
+}
+    
+.construction{
+    color: #33758A;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+  
+    }
+
+#image-home-mobile{
+    display: block;
+    width: 30%;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+}
+
+
+@media only screen and (min-width: 415px) and (max-width: 768px){
+    .desktop-content{
+        display: none;
+    }
+
+    #image-home-mobile{
+        display: block;
+        width: 40%;
+        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .construction{
+        color: #33758A;
+        font-size: 28px;
+        text-align: center;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+      
+        }
+        
+    .mobile-content{
+        display: block;
+    }  
+
+}
